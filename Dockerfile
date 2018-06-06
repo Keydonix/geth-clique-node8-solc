@@ -10,6 +10,6 @@ RUN \
   git checkout 7422cd737d6bd45d552ecc10c7be0274f5a2b801 && \
   cmake -DCMAKE_BUILD_TYPE=Release -DTESTS=0 -DSOLC_LINK_STATIC=1 && \
   make solc && install -s  solc/solc /usr/bin && \
-  apk del sed build-base git make cmake gcc g++ musl-dev curl-dev boost-dev && \
+  apk del sed build-base make cmake gcc g++ musl-dev curl-dev boost-dev && \
   cd / && rm -rf solidity && \
   rm -rf /var/cache/apk/*
