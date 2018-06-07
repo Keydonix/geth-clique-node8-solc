@@ -1,4 +1,4 @@
-FROM keydonix/geth-poa
+FROM keydonix/geth-clique
 # Credit To: chriseth <chris@ethereum.org>
 
 # TODO: vendor?
