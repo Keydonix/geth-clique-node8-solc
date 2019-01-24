@@ -3,7 +3,7 @@ FROM keydonix/geth-clique
 
 # TODO: vendor?
 RUN \
-  apk --no-cache --update add build-base cmake boost-dev git nodejs=8.9.3-r1 && \
+  apk --no-cache --update add build-base cmake boost-dev git nodejs && \
   sed -i -E -e 's/include <sys\/poll.h>/include <poll.h>/' /usr/include/boost/asio/detail/socket_types.hpp && \
   git clone https://github.com/ethereum/solidity && \
   cd /solidity && \
